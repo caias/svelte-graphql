@@ -1,0 +1,45 @@
+{
+  "name": "svelte",
+  "version": "1.0.0",
+  "description": "svelte with rollup and graphql",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caias/svelte-graphql-rollup.git"
+  },
+  "keywords": [
+    "svelte",
+    "rollup",
+    "graphql",
+    "scss"
+  ],
+  "author": "caias <caias1018gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caias/svelte-graphql-rollup/issues"
+  },
+  "homepage": "https://github.com/caias/svelte-graphql-rollup#readme",
+  "devDependencies": {
+    "@rollup/plugin-alias": "^2.2.0",
+    "@rollup/plugin-commonjs": "^11.0.0",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "apollo-boost": "^0.4.7",
+    "eslint": "^6.8.0",
+    "eslint-plugin-svelte3": "^2.7.3",
+    "graphql": "^14.6.0",
+    "node-sass": "^4.13.1",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^1.20.0",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^5.1.2",
+    "sirv-cli": "^0.4.4",
+    "svelte": "^3.0.0",
+    "svelte-apollo": "^0.3.0",
+    "svelte-preprocess": "^3.3.1",
+    "svelte-spa-router": "^2.0.0"
+  },
+}
