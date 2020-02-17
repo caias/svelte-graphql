@@ -1,0 +1,55 @@
+@import './variables.scss';
+
+:global(
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, address, cite, code, ins,
+  del, em, img, strong, sub, sup, i, center, input, button,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, embed,
+  figure, figcaption, footer, header, hgroup,
+  menu, nav, section
+) {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing:border-box;
+}
+
+:global(html) {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+:global(body) {
+  background: color(white, 2);
+  font-size: rem(14px);
+}
+
+:global(ul, ol, li) {
+  list-style: none;
+}
+
+:global(img) {
+  font-size: 0;
+}
+
+:global(a, a:hover, a:visited, a:link, a:focus, a:active) {
+  text-decoration: none;
+}
+
+:global(span) {
+  display: inline-block;
+}
+
+:global(button) {
+  all: unset;
+  display: inline-block;
+  cursor: pointer;
+}
+
+:global(label) {
+  display: inline-block;
+  cursor: pointer;
+}
