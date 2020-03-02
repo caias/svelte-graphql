@@ -1,15 +1,14 @@
 <script>
   import { link } from 'svelte-spa-router';
-  // import active from 'svelte-spa-router/active';
 </script>
 
 <header>
   <h1 class="logo">
-    <img src="https://view01.wemep.co.kr/wmp-main/50/201808/08/mml_3wywtfnsm4y1.png" alt="특가대표! 위메프">
+    <img src="https://dummyimage.com/128x90/fff/e55.png&text=svelte" alt="Svelte">
   </h1>
   <!-- 추후 메뉴가 추가될 경우 메뉴 생성 -->
   <a href="/" use:link>Home</a>
-  <a href="/special" use:link>Special</a>
+  <a href="/special" use:link>Events</a>
 </header>
 
 <style lang="scss">
@@ -20,15 +19,18 @@
     border-bottom: 1px solid #ddd;
     background-color: rgba(255, 255, 255, .8);
     height: $header-height;
+    text-align: right;
   }
 
   .logo {
     @include size(rem(64px), rem(45px));
-    float: left;
+    @include poslt;
   }
 
   .logo ~ a {
-    float: left;
+    line-height: rem(45px);
+    font-size: rem(20px);
+    margin-right: rem(20px);
   }
 
   .logo img {

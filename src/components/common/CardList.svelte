@@ -4,6 +4,7 @@
 
 <ul>
   {#each list as item, index}
+    <!-- {@debug item} -->
     <li>
       <slot {item} {index}>
         <span>컨텐츠가 없습니다.</span>

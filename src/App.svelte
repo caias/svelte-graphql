@@ -6,7 +6,7 @@
   import Header from '~/components/Header.svelte';
 
   const client = new ApolloClient({
-    uri: 'http://prototype-dev.wemakeprice.com:8000/graphql',
+    uri: 'http://localhost:7077/graphql',
   });
 
   setClient(client);

@@ -44,5 +44,3 @@ export default {
     clearScreen: false,
   },
 };
-
-// "eslint.validate": ["svelte"] setting.json 추가

@@ -7,14 +7,14 @@
 
   const DATA = gql`
     {
-      getSpecials{
+      events{
         duration{
           date
           time
         }
-        link{
+        value{
           type
-          value
+          link
           imgUrl
           imgAlt
           imgWidth
@@ -33,15 +33,16 @@
 {#await $datas}
 <Loading />
   {:then result}
-  <CardList list={result.data.getSpecials} let:item={item} let:index={index}>
-    <a href="{item.link.value}" class="link">
-      <img src="{item.link.imgUrl}" class="img" alt="{item.link.imgAlt}">
+  <!-- {@debug result} -->
+  <CardList list={result.data.events} let:item={item} let:index={index}>
+    <a href="{item.value.link}" class="link">
+      <img src="{item.value.imgUrl}" class="img" alt="{item.value.imgAlt}">
       <div class="title">
-        <b>{item.link.imgAlt}</b>
-        <span class="date">({item.duration.date})</span>
+        <b>{item.value.imgAlt}</b>
+        <span class="date">({item.duration.date}) - {item.duration.time}</span>
       </div>
       <div class="notic">
-        <span class="text">특가 알림을 받겠습니다.</span>
+        <span class="text">이벤트 알림을 받겠습니다.</span>
         <Checkbox agree={item.pushAgree} {index} />
       </div>
     </a>

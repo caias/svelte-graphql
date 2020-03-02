@@ -1,10 +1,14 @@
 {
   "name": "svelte",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "svelte with rollup and graphql",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c",
+    "autobuild": "rollup -c -w",
+    "dev": "run-p start:dev autobuild",
+    "start": "sirv public",
+    "start:dev": "sirv public --dev"
   },
   "repository": {
     "type": "git",
