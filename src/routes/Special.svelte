@@ -64,6 +64,9 @@
   .title {
     padding: rem(15px);
     color: color(black, 2);
+    b{
+      font-size: rem(20px);
+    }
   }
   .notic {
     padding: rem(10px) rem(15px);
