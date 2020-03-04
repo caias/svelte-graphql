@@ -1,9 +1,9 @@
 import Home from '~/routes/Home.svelte';
-import Special from '~/routes/Special.svelte';
+import Event from '~/routes/Event.svelte';
 
 const routes = {
   '/': Home,
-  '/special': Special,
+  '/special': Event,
 };
 
 export default routes;
